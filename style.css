@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    position: relative;
+    background-color: black;
+    width: 100vw;
+    height: 8vh;
+}
+
+.encabezado{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.titulo{
+    color: lime;
+    position: absolute;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    left: 40%;
+    top: 18%;
+}
+
+.logo{
+    position: absolute;
+    top: 16%;
+    left: 10%;
+}
+
+main{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+
+.textarea1{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    width: 40%;
+    height: 60%;
+    left: 12%;
+    top: 15%;
+    border: none;
+    outline: 0;
+    resize: none;
+    font-family: inherit;
+    font-size: 18px;
+    color: lime;
+}
+
+.textarea1::placeholder{
+    color: lime;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1%;
+    position: absolute;
+    width: 80%;
+    left: 11%;
+    top: 76%;
+    gap: 2%;
+}
+
+.encriptar, .desencriptar, .copiar, .borrar{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    border-radius: 24px;
+    background-color: rgba(0, 0, 0, 0) ;
+    color: black;
+    gap: 8px;
+    width: 24%;
+    border: none;
+    -webkit-box-shadow: 0px 5px 3px 0px black;
+    -moz-box-shadow: 0px 3px 0px 0px black;
+    box-shadow: 0px 5px 3px 0px black;
+    transition: 0.7s;
+}
+
+
+.encriptar:hover, .desencriptar:hover, .copiar:hover, .borrar:hover{
+    background-color: lime;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 2px 1px 0px black;
+    -moz-box-shadow: 0px 2px 1px 0px black;
+    box-shadow: 0px 2px 1px 0px black;
+    transform: translateY(3px);
+}
+
+.boton_funciones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1%;
+    position: absolute;
+    width: 80%;
+    left: 11%;
+    top: 84%;
+    gap: 2%;
+}
+
+.interactividad{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    left: 60%;
+    top: 5%;
+    background-color:  rgba(0, 0, 0, 0) ;
+    box-shadow: 0px 24px 32px -8px;
+    border-radius: 32px;
+}
+
+.interactividad #hacker, .interactividad #encriptado, .interactividad #desencriptado{
+    position: absolute;
+    width: 79%;
+    height: 30%;
+    top: 15%;
+}
+
+.mensaje textarea{
+    position: absolute;
+    left: 14%;
+    top: 67%;
+    background-color: rgba(0, 0, 0, 0)  ;
+    border: none;
+    outline: 0;
+    resize: none;
+    color: lime;
+    font-size: 16px;
+    gap: 10px;
+}
+
+.respuesta_proceso{
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-style: normal;
+    top: 10%;
+    left: 14%;
+    color: lime;
+}
+
+.titulo_mensaje{
+    position: absolute;
+    left: 14%;
+    top: 55%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    color: lime;    
+}
+
+.botones2{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4%;
+    position: absolute;
+    width: 80%;
+    left: 21%;
+    top: 90%;
+    gap: 22%;
+}
+
+.copiar1, .borrar1{
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    gap: 10%;
+    border: none;
+    -webkit-box-shadow: 0px 5px 3px 0px black;
+    -moz-box-shadow: 0px 3px 0px 0px black;
+    box-shadow: 0px 5px 3px 0px black;
+    transition: 0.7s;
+}
+
+.copiar1:hover, .borrar1:hover{
+    background-color: lime;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 2px 1px 0px black;
+    -moz-box-shadow: 0px 2px 1px 0px black;
+    box-shadow: 0px 2px 1px 0px black;
+    transform: translateY(3px);
+}
+
+footer{
+    position: absolute;
+    width: 100vw;
+    height: 4vh;
+    background-color: black;
+}
+
+.echo{
+    position: absolute;
+    left: 45%;
+    color: lime;
+}
+
+@media(max-width: 1000px){
+    .encabezado{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .titulo{
+        font-size: 20px;
+        left: 30%;
+    }
+
+    .logo{
+        position: absolute;
+        top: 8%;
+        left: 0%;
+    }
+
+    .textarea1{
+        background-color: rgba(0, 0, 0, 0);
+        width: 80%;
+        height: 40%;
+        left: 10%;
+        top: 8%;
+    }
+
+    .botones{
+        width: 80%;
+        left: 9%;
+        top: 50%;
+        gap: 2%;
+    }
+
+    .boton_funciones{
+        width: 80%;
+        left: 51%;
+        top: 50%;
+        gap: 2%;
+    }
+
+    .interactividad{
+        width: 80%;
+        height: 50%;
+        left: 9%;
+        top: 56%;
+    }
+
+    .respuesta_proceso{
+        font-size: 12px;
+        top: 1%;
+        left: 14%;
+    }
+
+    .interactividad #hacker,  .interactividad #encriptado, .interactividad #desencriptado{
+        width: 79%;
+        height: 30%;
+        top: 5%;
+    }
+
+    .titulo_mensaje{
+        left: 14%;
+        top: 36%;
+        font-size: 14px;   
+    }
+    
+    .mensaje textarea{
+    left: 9%;
+    top: 45%;
+    }
+
+    .botones2{
+        width: 80%;
+        left: 19%;
+        top: 85%;
+        gap: 22%;
+    }
+
+    .encriptar, .desencriptar, .copiar, .borrar{
+        color: lime;
+        border: 1px solid lime;
+    }
+
+    .copiar1, .borrar1{
+        color: lime;
+        border: 1px solid lime;
+    }
+}
