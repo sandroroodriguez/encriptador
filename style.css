@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: black;
+}
 
 header{
-    position: relative;
-    background-color: black;
-    width: 100vw;
+    background-color:rgba(0, 0, 0, 0);
+    width: 100%;
     height: 8vh;
 }
 
@@ -17,18 +19,20 @@ header{
 }
 
 .titulo{
+    position: absolute;
     color: lime;
     position: absolute;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
     left: 40%;
-    top: 18%;
+    top: 2%;
 }
+
 
 .logo{
     position: absolute;
-    top: 16%;
-    left: 10%;
+    top: 1.5%;
+    left: 1%;
 }
 
 main{
@@ -37,12 +41,17 @@ main{
     height: 100vh;
 }
 
+.proceso_de_encriptado{
+    width: 100%;
+    height: 100vh;
+}
+
 .textarea1{
     position: absolute;
-    background-color: rgba(0, 0, 0, 0);
+    background-color:rgba(0, 0, 0, 0);
     width: 40%;
     height: 60%;
-    left: 12%;
+    left: 5.5%;
     top: 15%;
     border: none;
     outline: 0;
@@ -56,6 +65,13 @@ main{
     color: lime;
 }
 
+.condiciones{
+    position: absolute;
+    top: 77%;
+    left: 6%;
+    color: lime;
+}
+
 .botones{
     display: flex;
     flex-direction: row;
@@ -63,8 +79,8 @@ main{
     padding: 1%;
     position: absolute;
     width: 80%;
-    left: 11%;
-    top: 76%;
+    left: 4.5%;
+    top: 90%;
     gap: 2%;
 }
 
@@ -73,7 +89,7 @@ main{
     justify-content: center;
     padding: 2%;
     border-radius: 24px;
-    background-color: rgba(0, 0, 0, 0) ;
+    background-color:rgba(0, 0, 0, 0);
     color: black;
     gap: 8px;
     width: 24%;
@@ -83,7 +99,6 @@ main{
     box-shadow: 0px 5px 3px 0px black;
     transition: 0.7s;
 }
-
 
 .encriptar:hover, .desencriptar:hover, .copiar:hover, .borrar:hover{
     background-color: lime;
@@ -101,42 +116,41 @@ main{
     padding: 1%;
     position: absolute;
     width: 80%;
-    left: 11%;
-    top: 84%;
+    left: 4.5%;
+    top: 80%;
     gap: 2%;
 }
 
 .interactividad{
-    display: flex;
-    justify-content: center;
     position: absolute;
-    width: 30%;
-    height: 90%;
-    left: 60%;
-    top: 5%;
-    background-color:  rgba(0, 0, 0, 0) ;
-    box-shadow: 0px 24px 32px -8px;
-    border-radius: 32px;
+    background-color:rgba(0, 0, 0, 0);
+    width: 50%;
+    height: 100vh;
+    left: 50%;
+    top: 8vh;
 }
 
 .interactividad #hacker, .interactividad #encriptado, .interactividad #desencriptado{
     position: absolute;
-    width: 79%;
+    width: 60%;
     height: 30%;
     top: 15%;
+    left: 21%;
 }
 
 .mensaje textarea{
     position: absolute;
-    left: 14%;
-    top: 67%;
-    background-color: rgba(0, 0, 0, 0)  ;
+    background-color:rgba(0, 0, 0, 0);
+    width: 60%;
+    height: 30%;
+    left: 21%;
+    top: 49%;
     border: none;
     outline: 0;
     resize: none;
+    font-family: inherit;
+    font-size: 18px;
     color: lime;
-    font-size: 16px;
-    gap: 10px;
 }
 
 .respuesta_proceso{
@@ -145,28 +159,29 @@ main{
     font-size: 15px;
     font-style: normal;
     top: 10%;
-    left: 14%;
+    left: 21%;
     color: lime;
 }
 
 .titulo_mensaje{
     position: absolute;
-    left: 14%;
-    top: 55%;
+    left: 21%;
+    top: 46%;
     font-family: 'Courier New', Courier, monospace;
     font-size: 14px;
     color: lime;    
 }
 
 .botones2{
+    position: absolute;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 4%;
     position: absolute;
-    width: 80%;
+    width: 51%;
     left: 21%;
-    top: 90%;
+    top: 80%;
     gap: 22%;
 }
 
@@ -177,12 +192,12 @@ main{
     border-radius: 16px;
     background-color: rgba(0, 0, 0, 0);
     color: black;
-    gap: 10%;
     border: none;
     -webkit-box-shadow: 0px 5px 3px 0px black;
     -moz-box-shadow: 0px 3px 0px 0px black;
     box-shadow: 0px 5px 3px 0px black;
     transition: 0.7s;
+    width: 40%;
 }
 
 .copiar1:hover, .borrar1:hover{
@@ -198,7 +213,6 @@ footer{
     position: absolute;
     width: 100vw;
     height: 4vh;
-    background-color: black;
 }
 
 .echo{
@@ -207,50 +221,47 @@ footer{
     color: lime;
 }
 
-@media(max-width: 1000px){
-    .encabezado{
-        display: flex;
-        flex-direction: row;
-    }
-
+@media screen and (max-width: 1024px){
     .titulo{
         font-size: 20px;
         left: 30%;
     }
 
-    .logo{
-        position: absolute;
-        top: 8%;
-        left: 0%;
-    }
-
     .textarea1{
-        background-color: rgba(0, 0, 0, 0);
         width: 80%;
         height: 40%;
         left: 10%;
         top: 8%;
     }
 
+    .condiciones{
+        top: 49.5%;
+        left: 10%;
+    }
+
     .botones{
-        width: 80%;
-        left: 9%;
-        top: 50%;
+        width: 38%;
+        left: 8%;
+        top: 53%;
         gap: 2%;
     }
 
+    .encriptar, .desencriptar, .copiar, .borrar{
+        width: 69%;
+    }
+
     .boton_funciones{
-        width: 80%;
-        left: 51%;
-        top: 50%;
+        width: 40%;
+        left: 47%;
+        top: 53%;
         gap: 2%;
     }
 
     .interactividad{
         width: 80%;
-        height: 50%;
-        left: 9%;
-        top: 56%;
+        height: 47%;
+        left: 10%;
+        top: 60%;
     }
 
     .respuesta_proceso{
@@ -263,6 +274,7 @@ footer{
         width: 79%;
         height: 30%;
         top: 5%;
+        left: 10%;
     }
 
     .titulo_mensaje{
@@ -272,24 +284,61 @@ footer{
     }
     
     .mensaje textarea{
-    left: 9%;
-    top: 45%;
+        width: 78%;
+        height: 39%;
+        left: 10%;
+        top: 43%;
     }
 
     .botones2{
         width: 80%;
-        left: 19%;
+        left: 8%;
         top: 85%;
-        gap: 22%;
+        gap: 15%;
     }
 
-    .encriptar, .desencriptar, .copiar, .borrar{
+    .encriptar, .desencriptar, .copiar, .borrar, .copiar1, .borrar1{
         color: lime;
         border: 1px solid lime;
     }
 
-    .copiar1, .borrar1{
-        color: lime;
-        border: 1px solid lime;
+    .echo{
+        font-size: 20px;
+        left: 30%;
     }
+}
+
+@media screen and (max-width: 900px){
+    .matrix{
+        position: absolute;
+        width: 99.9vw;
+        height: 100vh;
+    }
+
+    .titulo{
+        left: 40%;
+        top: 3%;
+    }
+
+    .botones2{
+        top: 75%;
+    }
+
+    .echo{
+        position: absolute;
+        left: 40%;
+        top: 22%;
+    }
+
+
+}
+
+@media screen and (max-width: 768px){
+    .matrix{
+        position: absolute;
+        width: 99.9vw;
+        height: 100vh;
+    }
+
+    
 }
